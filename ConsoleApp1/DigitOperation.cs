@@ -24,7 +24,7 @@ namespace ConsoleApp1
 
         public static int[] ShiftArray(int[] arr)
         {
-            int rnd = new Random().Next(10);
+            int rnd = new Random().Next(arr.Length,15);
             int[] array = new int[arr.Length];
 
             for (int i = 0; i < arr.Length; i++)
@@ -33,28 +33,6 @@ namespace ConsoleApp1
             }
 
             return array;
-        }
-
-        public static int MaxElemSearch(int[] arr)
-        {
-            return BinarySearch(arr);
-        }
-
-
-        private static int BinarySearch(int[] arr)
-        {
-            int result = 0;
-
-            if (arr[0] < arr[arr.Length / 2])
-            {
-
-            }
-            else if (arr[arr.Length - 1] < arr[arr.Length / 2])
-            {
-
-            }
-
-            return result;
         }
     }
 }
